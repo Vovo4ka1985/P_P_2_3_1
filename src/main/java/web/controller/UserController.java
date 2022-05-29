@@ -34,7 +34,7 @@ public class UserController {
     }
     @GetMapping("/create")
     public String newUserForm (@ModelAttribute("user") User user, Model model) {
-        model.addAttribute("user", new User());
+        //model.addAttribute("user", new User());
         return "create";
     }
     @PostMapping("/create")
